@@ -1,0 +1,375 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.centered {
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* Add padding to the top of each section */
+#home, #about, #resume, #projects, #contact {
+    padding-top: 80px; /* Adjust the padding to match the height of your navigation bar */
+}
+
+/* CSS for Burger Menu Button */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Navigation Styles */
+.sticky-nav {
+    position: sticky;
+    justify-content: space-between;
+    padding: 14px 0px;
+    top: 0;
+    background-color: #180a51;
+    z-index: 1000;
+    height: 9px; /* Adjust the height as needed */
+
+
+}
+
+.sticky-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Spread items evenly */
+    align-items: center;
+}
+
+.sticky-nav li {
+    margin: 0 10px;
+    margin-right: 20px;
+}
+
+.sticky-nav a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.sticky-nav a:hover {
+    color: #007BFF;
+}
+
+/* Header Styles */
+#home {
+    text-align: center;
+    padding: 0 0;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-image {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* About Me Styles */
+
+
+
+/* About Me Styles */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-container {
+    background-color: #f4f4f4; /* Add a background color for the container */
+    padding: 20px; /* Add padding to the container */
+    text-align: left; /* Align text to the left within the container */
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 1px solid #ccc; /* Add a border to the container (optional) */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a shadow to the container (optional) */
+}
+
+.about-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* ... (rest of the "About Me" content styles) ... */
+
+#about {
+    padding: 50px 0;
+}
+
+#about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#about ol {
+    font-size: 18px;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+
+/* Resume Styles */
+#resume {
+    padding: 50px 20px; /* Reduce padding and add some horizontal padding */
+    text-align: left; /* Align text to the left */
+    background-color: #00000081;
+    color: #fff;
+    max-width: 800px; /* Reduce the maximum width of the resume section */
+    margin: 0 auto; /* Horizontally center the resume section */
+   
+}
+
+.name {
+    text-align: center;
+}
+#resume h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff; /* Set heading text color to white */
+}
+
+#resume h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #fff; /* Set heading text color to white */
+}
+
+#resume h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff; /* Set heading text color to white */
+}
+
+#resume p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff; /* Set paragraph text color to white */
+}
+
+#resume ul {
+    font-size: 18px;
+    margin: 20px 0;
+    padding-left: 20px;
+    color: #fff; /* Set list item text color to white */
+}
+
+
+
+/* Projects Styles */
+#projects {
+    padding: 50px 0;
+    text-align: center; /* Center-align the content within the section */
+
+  
+}
+
+.project {
+    margin: 0 auto; /* Horizontally center the project divs */
+    text-align: left; /* Adjust text alignment within project divs */
+    max-width: 800px; /* Limit the maximum width of the project divs */
+    margin-bottom: 40px;
+}
+
+
+.project h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact Styles */
+#contact {
+    padding: 50px 0;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #180a51;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Style for Footer Navigation */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute items to both ends */
+    align-items: center;
+    padding: 10px 20px; /* Add padding for spacing */
+    background-color: #180a51;
+    color: #fff;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display the list items horizontally */
+}
+
+.footer-nav ul li {
+    margin-right: 20px; /* Add right margin between navigation items */
+}
+
+.footer-nav ul li:last-child {
+    margin-right: 0; /* Remove right margin from the last navigation item */
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+/* Responsive Styles
+@media screen and (max-width: 768px) {
+    .sticky-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sticky-nav li {
+        margin: 10px 0;
+    }
+} */
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+    
+    .sticky-nav {
+        display: none;
+        /* Add any additional styles for mobile navigation here */
+    }
+}
+/* Style for Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Add spacing between icons */
+    text-decoration: none;
+    transition: transform 0.2s; /* Add a hover effect */
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the width to your preferred size */
+    height: 40px; /* Adjust the height to maintain aspect ratio */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+/* CSS for Footer Burger Menu Button */
+.footer-burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* ... (Existing CSS styles for .bar) ... */
+
+/* CSS for Footer Navigation Menu */
+/* .footer-nav {
+    /* Your existing styles for the footer navigation menu */
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    /* Main Navigation Burger Menu Styles (from previous answer) */
+    .burger-menu {
+        display: flex;
+    }
+    
+    .sticky-nav {
+        display: none;
+    }
+    
+    /* Footer Navigation Styles */
+    .footer-burger-menu {
+        display: flex;
+    }
+    
+    .footer-nav {
+        display: none;
+        /* Add any additional styles for mobile footer navigation here */
+    }
+}
